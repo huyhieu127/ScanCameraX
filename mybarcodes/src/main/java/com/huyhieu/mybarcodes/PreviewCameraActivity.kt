@@ -175,12 +175,6 @@ class PreviewCameraActivity : AppCompatActivity() {
                             isShow = true
                             val bounds = barcode.boundingBox
                             val corners = barcode.cornerPoints
-                            /*Toast.makeText(
-                                this,
-                                "${bounds?.left} + ${bounds?.top}  + ${bounds?.right} + ${bounds?.bottom} \n ${corners.toString()}",
-                                Toast.LENGTH_LONG
-                       k     ).show()*/
-                            //drawShape(bounds!!, corners)
                             val rawValue = barcode.rawValue
                             when (barcode.valueType) {
                                 Barcode.TYPE_WIFI -> {
